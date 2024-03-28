@@ -224,9 +224,9 @@ export abstract class Embed {
    * @hidden
    */
   constructor(service: Service, element: HTMLElement, config: IEmbedConfigurationBase, iframe?: HTMLIFrameElement, phasedRender?: boolean, isBootstrap?: boolean) {
-    if (autoAuthInEmbedUrl(config.embedUrl)) {
-      throw new Error(EmbedUrlNotSupported);
-    }
+    // if (autoAuthInEmbedUrl(config.embedUrl)) {
+    //   throw new Error(EmbedUrlNotSupported);
+    // }
 
     Array.prototype.push.apply(this.allowedEvents, Embed.allowedEvents);
     this.eventHandlers = [];
